@@ -1,0 +1,174 @@
+.section {
+  background-color: var(--color-bg-lighter);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 56px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.eyebrow {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.headline {
+  font-size: 2.5rem;
+  color: var(--color-black);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  color: var(--color-primary);
+}
+
+.description {
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  cursor: ew-resize;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.imageAfter, .imageBefore {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+.sliderHandle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: transparent;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.sliderLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: var(--color-white);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transform: translateX(-50%);
+}
+
+.sliderButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  z-index: 11;
+}
+
+.labelBefore, .labelAfter {
+  position: absolute;
+  bottom: 16px;
+  padding: 4px 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--color-black);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  z-index: 5;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.labelBefore {
+  left: 16px;
+}
+
+.labelAfter {
+  right: 16px;
+}
+
+.cardFooter {
+  padding: 16px 24px;
+  background-color: var(--color-white);
+  text-align: center;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.caseName {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--color-black);
+  letter-spacing: 0.5px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.disclaimer {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .headline {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .headline {
+    font-size: 1.75rem;
+  }
+}

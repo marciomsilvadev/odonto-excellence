@@ -1,0 +1,59 @@
+.ctaSection {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  flex: 0 0 30%;
+}
+
+.headline {
+  font-size: 32px;
+  line-height: 1.1;
+  color: var(--color-black);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex: 1;
+  justify-content: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.icon {
+  color: var(--color-primary);
+  width: 32px;
+  height: 32px;
+  stroke-width: 1.5;
+}
+
+.stepText {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-black);
+  line-height: 1.3;
+}
+
+.right {
+  flex: 0 0 auto;
+}
+
+.waIcon {
+  width: 20px;
+  height: 20px;
+}
