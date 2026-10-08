@@ -81,7 +81,7 @@ export const clinicData = {
     {
       title: "Ortodontia",
       description: "Sorriso alinhado em qualquer idade.",
-      image: "/ortodontia.jpg"
+      image: "/ortodontia-real.jpg"
     },
     {
       title: "Facetas e Lentes",
