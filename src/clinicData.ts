@@ -86,7 +86,8 @@ export const clinicData = {
     {
       title: "Facetas e Lentes",
       description: "Mais estética e autoestima.",
-      image: "/facetas.jpg"
+      image: "/facetas-real.jpg",
+      contain: true
     },
     {
       title: "Clareamento Dental",
