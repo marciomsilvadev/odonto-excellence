@@ -98,7 +98,8 @@ export const clinicData = {
     {
       title: "Próteses Dentárias",
       description: "Qualidade de vida para o seu dia a dia.",
-      image: "/proteses.jpg"
+      image: "/proteses-real.png",
+      contain: true
     },
     {
       title: "Odontopediatria",
