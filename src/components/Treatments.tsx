@@ -1,10 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { ArrowRight, X } from 'lucide-react';
 import { clinicData } from '../clinicData';
 import styles from './Treatments.module.css';
 
 export function Treatments() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (selectedImage) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => { document.body.style.overflow = 'unset'; };
+  }, [selectedImage]);
 
   return (
     <section id="tratamentos" className={`section-padding ${styles.treatments}`}>
@@ -47,13 +57,14 @@ export function Treatments() {
         </div>
 
       </div>
-      {selectedImage && (
+      {selectedImage && typeof document !== 'undefined' && createPortal(
         <div className={styles.lightbox} onClick={() => setSelectedImage(null)}>
           <button className={styles.closeButton} onClick={() => setSelectedImage(null)}>
             <X size={24} />
           </button>
           <img src={selectedImage} alt="Tratamento ampliado" className={styles.lightboxImage} />
-        </div>
+        </div>,
+        document.body
       )}
     </section>
   );
