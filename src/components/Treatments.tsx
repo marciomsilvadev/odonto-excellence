@@ -28,7 +28,12 @@ export function Treatments() {
           {clinicData.treatments.map((treatment, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.imageWrapper}>
-                <img src={treatment.image} alt={treatment.title} className={styles.image} />
+                <img 
+                  src={treatment.image} 
+                  alt={treatment.title} 
+                  className={styles.image} 
+                  style={(treatment as any).contain ? { objectFit: 'contain', backgroundColor: '#fff' } : undefined}
+                />
               </div>
               <h3 className={styles.cardTitle}>{treatment.title}</h3>
               <p className={styles.cardDesc}>{treatment.description}</p>
