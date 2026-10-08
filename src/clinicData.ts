@@ -91,7 +91,8 @@ export const clinicData = {
     {
       title: "Clareamento Dental",
       description: "Um sorriso mais branco e radiante.",
-      image: "/clareamento.jpg"
+      image: "/clareamento-real.jpg",
+      contain: true
     },
     {
       title: "Próteses Dentárias",
