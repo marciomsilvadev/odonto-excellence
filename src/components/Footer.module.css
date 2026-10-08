@@ -102,3 +102,32 @@
   font-size: 0.6875rem;
   color: rgba(255, 255, 255, 0.4);
 }
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .logoSection {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .divider {
+    width: 40px;
+    height: 1px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 24px;
+  }
+
+  .actions {
+    align-items: center;
+  }
+}

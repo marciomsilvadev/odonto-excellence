@@ -51,18 +51,16 @@ export function Hero() {
             </div>
           </div>
         </div>
-      </div>
-      <div className={styles.imageWrapper}>
-        <picture>
-          <source media="(min-width: 1024px)" srcSet="/images/hero/hero-hd.png" />
+        <div className={styles.imageWrapper}>
           <img 
-            src="/images/hero/hero-odonto-excellence.png" 
+            src="/images/hero/hero-new-model.jpg" 
             alt="Paciente sorrindo - Odonto Excellence" 
             className={styles.image}
             loading="eager"
             decoding="sync"
+            fetchPriority="high"
           />
-        </picture>
+        </div>
       </div>
     </section>
   );

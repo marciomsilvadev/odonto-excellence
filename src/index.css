@@ -13,8 +13,8 @@
   --font-sans: 'Inter', sans-serif;
   --font-cursive: 'Caveat', cursive;
   
-  --container: 1320px;
-  --padding-container: 32px;
+  --container: 1280px;
+  --padding-container: 24px;
 }
 
 * {

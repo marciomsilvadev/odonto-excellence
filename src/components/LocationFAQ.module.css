@@ -15,7 +15,7 @@
 }
 
 .headline {
-  font-size: 36px;
+  font-size: clamp(28px, 3.5vw, 36px);
   line-height: 1.1;
   margin-bottom: 32px;
 }
@@ -96,7 +96,7 @@
 }
 
 .faqHeadline {
-  font-size: 24px;
+  font-size: clamp(20px, 2.5vw, 24px);
   line-height: 1.2;
   margin-bottom: 32px;
 }
@@ -150,4 +150,23 @@
   font-size: 0.875rem;
   color: var(--color-text-light);
   line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .left, .center, .right {
+    width: 100%;
+  }
+  .mapWrapper {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mapWrapper {
+    height: 300px;
+  }
 }
