@@ -1,9 +1,11 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowRight, X } from 'lucide-react';
 import { clinicData } from '../clinicData';
 import styles from './Treatments.module.css';
 
 export function Treatments() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section id="tratamentos" className={`section-padding ${styles.treatments}`}>
       <div className={`container`}>
@@ -27,7 +29,11 @@ export function Treatments() {
         <div className={styles.grid}>
           {clinicData.treatments.map((treatment, index) => (
             <div key={index} className={styles.card}>
-              <div className={styles.imageWrapper}>
+              <div 
+                className={styles.imageWrapper}
+                onClick={() => setSelectedImage(treatment.image)}
+                style={{ cursor: 'zoom-in' }}
+              >
                 <img 
                   src={treatment.image} 
                   alt={treatment.title} 
@@ -47,6 +53,16 @@ export function Treatments() {
           </a>
         </div>
       </div>
+      </div>
+
+      {selectedImage && (
+        <div className={styles.lightbox} onClick={() => setSelectedImage(null)}>
+          <button className={styles.closeButton} onClick={() => setSelectedImage(null)}>
+            <X size={24} />
+          </button>
+          <img src={selectedImage} alt="Tratamento ampliado" className={styles.lightboxImage} />
+        </div>
+      )}
     </section>
   );
 }
