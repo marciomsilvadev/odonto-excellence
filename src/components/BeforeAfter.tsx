@@ -131,7 +131,7 @@ export function BeforeAfter() {
     <section id="antes-depois" className={`section-padding ${styles.section}`}>
       <div className="container">
         <div className={styles.header}>
-          <div className={`eyebrow ${styles.eyebrow}`}>— RESULTADOS REAIS</div>
+          <div className={`eyebrow ${styles.eyebrow}`}>RESULTADOS REAIS</div>
           <h2 className={styles.headline}>
             Transformações que<br/>
             <span className={styles.highlight}>fazem a diferença.</span>
