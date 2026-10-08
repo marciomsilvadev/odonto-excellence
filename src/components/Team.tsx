@@ -22,10 +22,7 @@ export function Team() {
             atualização, prontos para oferecer o melhor para o seu sorriso.
           </p>
           
-          <a href="#contato" className={`btn btn-outline ${styles.cta}`}>
-            Conheça nossa equipe
-            <ArrowRight size={18} />
-          </a>
+
         </div>
 
         <div className={styles.right}>

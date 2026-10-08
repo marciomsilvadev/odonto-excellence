@@ -46,15 +46,7 @@ export function Treatments() {
           ))}
         </div>
 
-        <div className={styles.footer}>
-          <a href="#contato" className={`btn btn-outline ${styles.btn}`}>
-            Ver todos os tratamentos
-            <ArrowRight size={18} />
-          </a>
-        </div>
       </div>
-      </div>
-
       {selectedImage && (
         <div className={styles.lightbox} onClick={() => setSelectedImage(null)}>
           <button className={styles.closeButton} onClick={() => setSelectedImage(null)}>
