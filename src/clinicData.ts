@@ -104,7 +104,8 @@ export const clinicData = {
     {
       title: "Odontopediatria",
       description: "Cuidado especializado para os pequenos.",
-      image: "/odontopediatria.jpg"
+      image: "/odontopediatria-real.jpg",
+      contain: true
     }
   ],
   
