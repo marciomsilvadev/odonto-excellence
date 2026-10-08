@@ -75,7 +75,7 @@ export const clinicData = {
     {
       title: "Implantes Dentários",
       description: "Recupere a função e a estética do seu sorriso.",
-      image: "/implantes-real.png",
+      image: "/implantes-real-2.jpg",
       contain: true
     },
     {
