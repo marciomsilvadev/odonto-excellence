@@ -16,23 +16,23 @@ const cases: CaseConfig[] = [
     name: 'CASO 01', 
     before: '/images/antes-depois/caso-01-antes.jpg', 
     after: '/images/antes-depois/caso-01-depois.jpg',
-    styleBefore: { objectPosition: 'center 50%' },
-    styleAfter: { objectPosition: 'center 50%' }
+    styleBefore: { objectPosition: 'center 42%' },
+    styleAfter: { objectPosition: 'center 46%' }
   },
   { 
     id: 2, 
     name: 'CASO 02', 
     before: '/images/antes-depois/caso-02-antes.jpg', 
     after: '/images/antes-depois/caso-02-depois.jpg',
-    styleBefore: { objectPosition: 'center 45%' },
-    styleAfter: { objectPosition: 'center 45%' }
+    styleBefore: { objectPosition: 'center 42%' },
+    styleAfter: { objectPosition: 'center 43%' }
   },
   { 
     id: 3, 
     name: 'CASO 03', 
     before: '/images/antes-depois/caso-03-antes.jpg', 
     after: '/images/antes-depois/caso-03-depois.jpg',
-    styleBefore: { objectPosition: 'center 45%' },
+    styleBefore: { objectPosition: 'center 52%' },
     styleAfter: { objectPosition: 'center 45%' }
   },
   { 
@@ -40,8 +40,8 @@ const cases: CaseConfig[] = [
     name: 'CASO 04', 
     before: '/images/antes-depois/caso-04-antes.jpg', 
     after: '/images/antes-depois/caso-04-depois.jpg',
-    styleBefore: { objectPosition: 'center 50%' },
-    styleAfter: { objectPosition: 'center 50%' }
+    styleBefore: { objectPosition: 'center 49%' },
+    styleAfter: { objectPosition: 'center 54%' }
   }
 ];
 

@@ -29,7 +29,7 @@ export function Footer() {
         <div className={styles.logoSection}>
           <div className={styles.logo}>
             <img 
-              src="/images/brand/odonto-excellence-logo.png" 
+              src="/images/brand/logo-branca.png" 
               alt="Odonto Excellence" 
               className={styles.logoImage} 
             />
